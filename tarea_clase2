@@ -1,0 +1,48 @@
+#Vectores:
+# a. Crea una lista con todas tus materias cursadas e itinerala con un ciclo for imprimiento un mensaje en pantalla.
+materias=["fundamentosCP","economia","TeoriaPolitica" ]
+for materia in materias:
+    print("Materias cursadas; " + materia)
+#1. Suma de elementos: Crea una lista de números y escribe un programa que calcule la suma de todos los elementos de la lista.
+numero=[1,2,3,4,5,6,7,8,9]
+resultado=sum(numero)
+print(resultado)
+#2. Buscar el máximo: Escribe un programa que encuentre el valor máximo en una lista de números.
+maximo=max(numero)
+#3. Crea un programa que calcule el promedio de todos los elementos de un vector.
+suma = 0
+elementos = len(numero)
+for valor in numero:
+    suma = suma + valor
+promedio = suma / elementos 
+print("Promedio es:", promedio)
+#1. Registro de estudiantes: Crea un diccionario en el que las claves sean los nombres de los estudiantes y los valores sean sus calificaciones. Luego, escribe un programa que permita al usuario buscar la calificación de un estudiante por su nombre.
+notaDeEstudiantes={
+    "agus(1)":10,
+    "pedro(2)":8,
+    "juana(3)":5,
+}
+print("los estudiantes son Agus(1), Pedro(2),juana(3)")
+eleccion=int(input("eliga la nota que quiera saber (numero)"))
+if eleccion == 1: print("nota:",notaDeEstudiantes["agus(1)"])
+elif eleccion == 2: print("nota:",notaDeEstudiantes["pedro(2)"])
+elif eleccion == 3: print("nota:",notaDeEstudiantes["juana(3)"])
+else: print ("numero incorrecto")
+#2. Crea un diccionario que contenga tu nombre, edad, hobbies y toda la información que consideres relevantes para presentarte en el curso.
+Ezequiel={
+    "nombre completo": "Ezequiel Dippolito",  # Clave: "nombre completo pára identificar la variable", Valor: "Aldana Agustina Duarte"
+    "edad": "18",
+    "hobbies": ["dormir", "mirar peliculas", "escuchar música", "leer"],
+    "pelicula": "starwars",
+    "banda favorita": "metallica",
+    "género literario favorito": "Ci-fi"
+}
+#3. Contar elementos: Crea un diccionario que represente una bolda con diferentes tipos de frutas y la cantidad de cada tipo de fruta en la bolsa. Escribe un programa que cuente cuántas frutas hay en total.
+frutas={
+    "pera":2, #NO olvidar, coma para separar
+    "frutilla":3,
+    "banana":4,
+    "mandarina":5,
+}
+total=sum(frutas.values())
+print ("total de frutas: ",total)
