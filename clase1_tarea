@@ -1,0 +1,30 @@
+#Escribe un programa que solicite al usuario su nombre y edad, y luego imprima un mensaje que diga "Hola, [nombre]. Tienes [edad] años."
+nombre=input('ingrese su nombre: ')
+edad=int(input('ingrese su edad: '))
+print ('hola!',nombre,'. Tu edad: ',edad)
+
+#Escribe un programa que pida al usuario ingresar un número. Luego, verifica si ese número es positivo o negativo, e imprime un mensaje correspondiente.
+num=int(input('ingrese un numero: '))
+if num>0:print ('su numero es positivo')
+else:print ('su numero es negativo')
+
+#Condicionales con if y else
+print ('le voy a pedir que ingrese dos numeros')
+num2=int(input('ingrese el primero: '))
+num3=int(input('ingrese el segundo: '))
+if num2>num3:print (num2 ,'es mayor')
+elif num3>num2:print (num3 ,'es mayor')
+
+#Condicionales anidados (investigar)
+nota=int(input('ingrese su calificacion (10 al 100): '))
+if 90 <= nota <= 100: print ('tenes una A')
+elif 80 <= nota <= 89: print ('tenes una B')
+elif 70 <= nota <= 79: print ('tenes una c')
+elif 60 <= nota <= 69: print ('tenes una D')
+elif nota>60: print ('tenes una F')
+
+#Ejercicio 5 (investigar)
+#¿Qué es un array en informática? 
+    # es el tipo de variable que te permite contener varios datos del mismo tipo
+#¿Qué es un ciclo iterativo?   
+    #es la herramineta que te permite repetir en ciclo un codigo
